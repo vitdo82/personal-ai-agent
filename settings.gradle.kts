@@ -4,6 +4,7 @@ plugins {
 
 rootProject.name = "personal-ai-agent"
 include(":service-api")
+include(":web-admin-app")
 
 dependencyResolutionManagement {
     repositories {

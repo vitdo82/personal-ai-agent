@@ -6,7 +6,7 @@ plugins {
     id("com.diffplug.spotless") version "7.0.2"
 }
 
-group = "com.vitdo82.my"
+group = "com.vitdo82.personal-ai-agent"
 version = "1.0-SNAPSHOT"
 
 repositories {
