@@ -4,11 +4,16 @@ import org.springframework.ai.ollama.api.OllamaApi;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.stereotype.Service;
 
+import lombok.RequiredArgsConstructor;
+
 import java.util.List;
 
+@RequiredArgsConstructor
 @Service
 @ConditionalOnProperty(prefix = "app.assistans", name = "enabled", havingValue = "true", matchIfMissing = true)
 public class TextAssistant {
+
+    private final OllamaApi ollamaApi;
 
     public String correctText(String text) {
         return correctText(text, Language.ENGLISH);
@@ -17,7 +22,6 @@ public class TextAssistant {
     public String correctText(String text, Language language) {
         language = language == null ? Language.ENGLISH : language;
 
-        OllamaApi ollamaApi = OllamaApi.builder().baseUrl("http://localhost:11434").build();
         OllamaApi.ChatRequest chatRequest = OllamaApi.ChatRequest.builder("deepseek-r1:8b")
                 .stream(false)
                 .messages(List.of(
@@ -43,7 +47,6 @@ public class TextAssistant {
     public String translate(String text, Language language) {
         language = language == null ? Language.ENGLISH : language;
 
-        OllamaApi ollamaApi = OllamaApi.builder().baseUrl("http://localhost:11434").build();
         OllamaApi.ChatRequest chatRequest = OllamaApi.ChatRequest.builder("deepseek-r1:8b")
                 .stream(false)
                 .messages(List.of(
