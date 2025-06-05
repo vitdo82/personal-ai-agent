@@ -33,9 +33,14 @@ dependencies {
     implementation("org.springframework.boot:spring-boot-starter-security")
     implementation("org.springframework.boot:spring-boot-starter-validation")
     implementation("org.springframework.boot:spring-boot-starter-web")
+
+    implementation("org.springdoc:springdoc-openapi-starter-webmvc-ui:2.8.5")
+    implementation("org.modelmapper:modelmapper:3.2.2")
+
     implementation("org.flywaydb:flyway-core")
     implementation("org.flywaydb:flyway-database-postgresql")
     implementation("org.springframework.ai:spring-ai-ollama-spring-boot-starter")
+    implementation("org.springframework.ai:spring-ai-openai-spring-boot-starter")
     implementation("org.springframework.cloud:spring-cloud-starter-circuitbreaker-resilience4j")
     implementation("org.springframework.kafka:spring-kafka")
     implementation("org.springframework.modulith:spring-modulith-events-api")
@@ -50,6 +55,7 @@ dependencies {
     runtimeOnly("org.springframework.modulith:spring-modulith-events-kafka")
     runtimeOnly("org.springframework.modulith:spring-modulith-observability")
     annotationProcessor("org.projectlombok:lombok")
+
     testImplementation("org.springframework.boot:spring-boot-starter-test")
     testImplementation("org.springframework.boot:spring-boot-testcontainers")
     testImplementation("org.springframework.ai:spring-ai-spring-boot-testcontainers")
@@ -73,4 +79,7 @@ dependencyManagement {
 
 tasks.withType<Test> {
     useJUnitPlatform()
+    systemProperty("testcontainers.reuse.enable", "true")
+    systemProperty("ryuk.container.privileged", "true")
+    systemProperty("testcontainers.docker.client.strategy", "org.testcontainers.dockerclient.UnixSocketClientProviderStrategy")
 }

@@ -1,0 +1,53 @@
+spring:
+  application:
+    name: service-api
+  ai:
+    openai:
+      api-key: 11111
+  jpa:
+    generate-ddl: false
+    hibernate:
+      ddl-auto: update
+  jackson:
+    property-naming-strategy: SNAKE_CASE
+  flyway:
+    locations: classpath:/db/migration
+    schemas: public
+    baselineOnMigrate: true
+    enabled: true
+  datasource:
+    # driverClassName: org.postgresql.Driver
+    # url: jdbc:postgresql://localhost:5432/mydatabase-test?currentSchema=mydatabase-test
+    # username: myuser
+    # password: secret
+    driverClassName: org.testcontainers.jdbc.ContainerDatabaseDriver
+    url: jdbc:tc:postgresql:15:///testdb?TC_REUSABLE=true
+    username: test
+    password: test
+
+app:
+  assistants:
+    enabled: false
+  quiz:
+    enabled: true
+
+logging:
+  level:
+    root: WARN
+    org:
+      testcontainers: INFO
+      postgresql: INFO
+    com:
+      github.dockerjava: WARN
+
+server:
+  error:
+    include-message: always
+    include-binding-errors: always
+
+testcontainers:
+  reuse:
+    enable: true
+  ryuk:
+    container:
+      privileged: true 

@@ -1,33 +1,36 @@
-INSERT INTO public.quiz_entity (
-    id, created_date, last_modified_date, version, created_by, description, last_modified_by, name
-) VALUES
-      ('1', '2025-03-17 10:00:00', '2025-03-17 10:00:00', 1, 'admin', 'General knowledge quiz', 'admin', 'Quiz 1'),
-      ('2', '2025-03-17 10:01:00', '2025-03-17 10:01:00', 1, 'admin', 'Science trivia', 'admin', 'Quiz 2'),
-      ('3', '2025-03-17 10:02:00', '2025-03-17 10:02:00', 1, 'user1', 'History facts', 'user1', 'Quiz 3'),
-      ('4', '2025-03-17 10:03:00', '2025-03-17 10:03:00', 1, 'user2', 'Math riddles', 'user2', 'Quiz 4'),
-      ('5', '2025-03-17 10:04:00', '2025-03-17 10:04:00', 1, 'admin', 'Geography quiz', 'admin', 'Quiz 5'),
-      ('6', '2025-03-17 10:05:00', '2025-03-17 10:05:00', 1, 'user3', 'Sports trivia', 'user3', 'Quiz 6'),
-      ('7', '2025-03-17 10:06:00', '2025-03-17 10:06:00', 1, 'user4', 'Movies and TV shows', 'user4', 'Quiz 7'),
-      ('8', '2025-03-17 10:07:00', '2025-03-17 10:07:00', 1, 'admin', 'Technology quiz', 'admin', 'Quiz 8'),
-      ('9', '2025-03-17 10:08:00', '2025-03-17 10:08:00', 1, 'user5', 'Music trivia', 'user5', 'Quiz 9'),
-      ('10', '2025-03-17 10:09:00', '2025-03-17 10:09:00', 1, 'user6', 'Art and literature', 'user6', 'Quiz 10'),
-      ('11', '2025-03-17 10:10:00', '2025-03-17 10:10:00', 1, 'user7', 'Food and drinks', 'user7', 'Quiz 11'),
-      ('12', '2025-03-17 10:11:00', '2025-03-17 10:11:00', 1, 'admin', 'Health and wellness', 'admin', 'Quiz 12'),
-      ('13', '2025-03-17 10:12:00', '2025-03-17 10:12:00', 1, 'user8', 'Nature and environment', 'user8', 'Quiz 13'),
-      ('14', '2025-03-17 10:13:00', '2025-03-17 10:13:00', 1, 'user9', 'Business and economy', 'user9', 'Quiz 14'),
-      ('15', '2025-03-17 10:14:00', '2025-03-17 10:14:00', 1, 'user10', 'Politics and government', 'user10', 'Quiz 15'),
-      ('16', '2025-03-17 10:15:00', '2025-03-17 10:15:00', 1, 'admin', 'Psychology quiz', 'admin', 'Quiz 16'),
-      ('17', '2025-03-17 10:16:00', '2025-03-17 10:16:00', 1, 'user11', 'Philosophy quiz', 'user11', 'Quiz 17'),
-      ('18', '2025-03-17 10:17:00', '2025-03-17 10:17:00', 1, 'user12', 'Mythology trivia', 'user12', 'Quiz 18'),
-      ('19', '2025-03-17 10:18:00', '2025-03-17 10:18:00', 1, 'user13', 'Space and astronomy', 'user13', 'Quiz 19'),
-      ('20', '2025-03-17 10:19:00', '2025-03-17 10:19:00', 1, 'user14', 'Languages and words', 'user14', 'Quiz 20'),
-      ('21', '2025-03-17 10:20:00', '2025-03-17 10:20:00', 1, 'admin', 'Engineering quiz', 'admin', 'Quiz 21'),
-      ('22', '2025-03-17 10:21:00', '2025-03-17 10:21:00', 1, 'user15', 'Law and legal system', 'user15', 'Quiz 22'),
-      ('23', '2025-03-17 10:22:00', '2025-03-17 10:22:00', 1, 'user16', 'Fashion and trends', 'user16', 'Quiz 23'),
-      ('24', '2025-03-17 10:23:00', '2025-03-17 10:23:00', 1, 'user17', 'Famous personalities', 'user17', 'Quiz 24'),
-      ('25', '2025-03-17 10:24:00', '2025-03-17 10:24:00', 1, 'admin', 'Hobbies and crafts', 'admin', 'Quiz 25'),
-      ('26', '2025-03-17 10:25:00', '2025-03-17 10:25:00', 1, 'user18', 'Travel and tourism', 'user18', 'Quiz 26'),
-      ('27', '2025-03-17 10:26:00', '2025-03-17 10:26:00', 1, 'user19', 'Pets and animals', 'user19', 'Quiz 27'),
-      ('28', '2025-03-17 10:27:00', '2025-03-17 10:27:00', 1, 'user20', 'Vehicles and transportation', 'user20', 'Quiz 28'),
-      ('29', '2025-03-17 10:28:00', '2025-03-17 10:28:00', 1, 'admin', 'Technology innovations', 'admin', 'Quiz 29'),
-      ('30', '2025-03-17 10:29:00', '2025-03-17 10:29:00', 1, 'user21', 'Economic theories', 'user21', 'Quiz 30');
+-- Insert data into quiz_entity
+DELETE FROM public.quiz_entity;
+INSERT INTO public.quiz_entity (id, name, description, created_date, last_modified_date, version, created_by, last_modified_by)
+VALUES
+    ('quiz1', 'General Knowledge', 'A quiz about general knowledge', NOW(), NOW(), 1, 'admin', 'admin'),
+    ('quiz2', 'Science Quiz', 'A quiz about science topics', NOW(), NOW(), 1, 'admin', 'admin');
+
+-- Insert data into quiz_question_entity
+DELETE FROM public.quiz_question_entity;
+INSERT INTO public.quiz_question_entity (id, question, questions, enabled, created_date, last_modified_date, version, created_by, last_modified_by)
+VALUES
+    ('q1', 'What is the capital of France?', 'quiz1', TRUE, NOW(), NOW(), 1, 'admin', 'admin'),
+    ('q2', 'What is 2 + 2?', 'quiz1', TRUE, NOW(), NOW(), 1, 'admin', 'admin'),
+    ('q3', 'What planet is known as the Red Planet?', 'quiz2', TRUE, NOW(), NOW(), 1, 'admin', 'admin');
+
+-- Insert data into quiz_answer_entity
+DELETE FROM public.quiz_answer_entity;
+INSERT INTO public.quiz_answer_entity (id, text, is_correct, created_date, last_modified_date, version, created_by, last_modified_by)
+VALUES
+    ('a1', 'Paris', TRUE, NOW(), NOW(), 1, 'admin', 'admin'),
+    ('a2', 'London', FALSE, NOW(), NOW(), 1, 'admin', 'admin'),
+    ('a3', '4', TRUE, NOW(), NOW(), 1, 'admin', 'admin'),
+    ('a4', '5', FALSE, NOW(), NOW(), 1, 'admin', 'admin'),
+    ('a5', 'Mars', TRUE, NOW(), NOW(), 1, 'admin', 'admin'),
+    ('a6', 'Venus', FALSE, NOW(), NOW(), 1, 'admin', 'admin');
+
+-- Insert data into quiz_question_entity_quiz_answer
+DELETE FROM public.quiz_question_entity_quiz_answer;
+INSERT INTO public.quiz_question_entity_quiz_answer (quiz_question_entity_id, quiz_answer_id)
+VALUES
+    ('q1', 'a1'),
+    ('q1', 'a2'),
+    ('q2', 'a3'),
+    ('q2', 'a4'),
+    ('q3', 'a5'),
+    ('q3', 'a6');

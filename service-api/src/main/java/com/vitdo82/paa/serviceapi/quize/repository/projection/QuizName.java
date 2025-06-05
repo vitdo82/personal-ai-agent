@@ -1,4 +1,10 @@
 package com.vitdo82.paa.serviceapi.quize.repository.projection;
 
-public class QuizName {
+public interface QuizName {
+
+    String getId();
+
+    String getName();
+
+    String getDescription();
 }

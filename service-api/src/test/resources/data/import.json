@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Animals Quiz 1",
+    "questions": [
+      {
+        "enabled": true,
+        "question": "Which animal is the largest land mammal?",
+        "quizAnswer": [
+          { "correct": false, "text": "Tiger" },
+          { "correct": false, "text": "Hippopotamus" },
+          { "correct": true, "text": "Elephant" },
+          { "correct": false, "text": "Giraffe" }
+        ]
+      },
+      {
+        "enabled": true,
+        "question": "Which bird is known for mimicking sounds?",
+        "quizAnswer": [
+          { "correct": false, "text": "Eagle" },
+          { "correct": false, "text": "Sparrow" },
+          { "correct": false, "text": "Flamingo" },
+          { "correct": true, "text": "Parrot" }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Animals Quiz 2",
+    "questions": [
+      {
+        "enabled": true,
+        "question": "What is the fastest land animal?",
+        "quizAnswer": [
+          { "correct": false, "text": "Leopard" },
+          { "correct": true, "text": "Cheetah" },
+          { "correct": false, "text": "Horse" },
+          { "correct": false, "text": "Antelope" },
+          { "correct": false, "text": "Greyhound" }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Animals Quiz 3",
+    "questions": [
+      {
+        "enabled": true,
+        "question": "Which marine animal has eight arms?",
+        "quizAnswer": [
+          { "correct": true, "text": "Octopus" },
+          { "correct": false, "text": "Shark" },
+          { "correct": false, "text": "Seal" },
+          { "correct": false, "text": "Jellyfish" }
+        ]
+      }
+    ]
+  }
+]

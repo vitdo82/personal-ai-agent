@@ -1,9 +1,8 @@
-package com.vitdo82.paa.serviceapi.assistans.text;
+package com.vitdo82.paa.serviceapi.assistants.text;
 
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.junit.jupiter.api.Assertions.*;
 
 class TextAssistantTest {
 

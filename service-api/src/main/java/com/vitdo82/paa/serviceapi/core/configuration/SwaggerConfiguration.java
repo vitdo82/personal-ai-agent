@@ -1,4 +1,4 @@
-package com.vitdo82.paa.serviceapi.configuration;
+package com.vitdo82.paa.serviceapi.core.configuration;
 
 import io.swagger.v3.oas.models.OpenAPI;
 import io.swagger.v3.oas.models.info.Info;

@@ -1,4 +1,4 @@
-package com.vitdo82.paa.serviceapi.configuration;
+package com.vitdo82.paa.serviceapi.assistants.configuration;
 
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;

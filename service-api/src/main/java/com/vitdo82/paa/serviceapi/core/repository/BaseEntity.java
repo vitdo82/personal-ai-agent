@@ -1,4 +1,4 @@
-package com.vitdo82.paa.serviceapi.quize.repository;
+package com.vitdo82.paa.serviceapi.core.repository;
 
 import jakarta.persistence.*;
 import lombok.Getter;

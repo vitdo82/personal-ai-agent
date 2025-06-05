@@ -1,4 +1,4 @@
-package com.vitdo82.paa.serviceapi.assistans.text;
+package com.vitdo82.paa.serviceapi.assistants.text;
 
 import org.springframework.ai.ollama.api.OllamaApi;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;

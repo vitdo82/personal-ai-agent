@@ -1,4 +1,4 @@
-package com.vitdo82.paa.serviceapi.assistans.text;
+package com.vitdo82.paa.serviceapi.assistants.text;
 
 public enum Language {
 

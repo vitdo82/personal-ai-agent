@@ -1,10 +1,29 @@
-spring.application.name=service-api
+spring:
+  application:
+    name: service-api
+  ai:
+    openai:
+      api-key: 11111
+  jpa:
+    generate-ddl: false
+    hibernate:
+      ddl-auto: update
+  jackson:
+    property-naming-strategy: SNAKE_CASE
+  flyway:
+    locations: classpath:/db/migration
+    schemas: public
+    baselineOnMigrate: true
+    enabled: true
+  datasource:
+    driverClassName: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/mydatabase?currentSchema=mydatabase
+    username: myuser
+    password: secret
 
-app.assistans.enabled=false
-spring.ai.openai.chat.enabled=false
-spring.ai.openai.embedding.enabled=false
-spring.ai.openai.image.enabled=false
-spring.ai.openai.audio.transcription.enabled=false
-spring.ai.openai.audio.speech.enabled=false
+app:
+  assistants:
+    enabled: false
+  quiz:
+    enabled: true
 
-spring.ai.openai.api-key=11111
