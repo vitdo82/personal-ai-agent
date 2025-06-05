@@ -15,10 +15,21 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
     permissions:
       contents: read
+      packages: read
+
+    services:
+      docker:
+        image: docker:24.0.5
+        options: >-
+          --dns 8.8.8.8
+          --dns 8.8.4.4
+        ports:
+          - 2375:2375
+        env:
+          DOCKER_TLS_CERTDIR: ""
 
     steps:
     - uses: actions/checkout@v4
@@ -35,6 +46,8 @@ jobs:
 
     - name: Build with Gradle Wrapper
       run: ./gradlew build
+      env:
+        DOCKER_HOST: tcp://localhost:2375
 
     # NOTE: The Gradle Wrapper is the default and recommended way to run Gradle (https://docs.gradle.org/current/userguide/gradle_wrapper.html).
     # If your project does not have the Gradle Wrapper configured, you can use the following configuration to run Gradle with a specified version.
