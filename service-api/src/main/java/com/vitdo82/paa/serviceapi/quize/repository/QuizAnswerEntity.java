@@ -6,10 +6,12 @@ import com.vitdo82.paa.serviceapi.core.repository.BaseEntity;
 import jakarta.persistence.Entity;
 import lombok.Getter;
 import lombok.Setter;
+import lombok.ToString;
 
 @Entity
 @Setter
 @Getter
+@ToString
 public class QuizAnswerEntity extends BaseEntity {
 
     private String text;

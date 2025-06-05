@@ -27,3 +27,16 @@ app:
   quiz:
     enabled: true
 
+logging:
+  level:
+    root: INFO
+    org:
+      testcontainers: INFO
+      postgresql: INFO
+    com:
+      github.dockerjava: WARN
+
+server:
+  error:
+    include-message: always
+    include-binding-errors: always

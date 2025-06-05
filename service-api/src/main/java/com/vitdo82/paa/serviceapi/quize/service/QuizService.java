@@ -35,12 +35,15 @@ public class QuizService {
         return quizRepository.findAllNames();
     }
 
+    @Transactional(readOnly = false)
     public String buildQuize(String name, Integer questionCount, String domain) {
         QuizEntity quize = new QuizEntity();
         quize.setName(name);
         quize.setQuestions(this.generateQuestions(domain, questionCount));
+
+        log.info("Save a new quize: {}", quize);
         quizRepository.save(quize);
-        
+
         return quize.getId();
     }
 
@@ -55,7 +58,7 @@ public class QuizService {
         QuizQuestionEntity question = new QuizQuestionEntity();
         question.setEnabled(true);
         question.setQuestion("Test question");
-        
+
         QuizAnswerEntity answerYes = new QuizAnswerEntity();
         answerYes.setCorrect(true);
         answerYes.setText("Answer YES");

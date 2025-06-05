@@ -4,6 +4,7 @@ import com.vitdo82.paa.serviceapi.core.repository.BaseEntity;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
+import lombok.ToString;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -11,6 +12,7 @@ import java.util.List;
 @Entity
 @Getter
 @Setter
+@ToString
 public class QuizQuestionEntity extends BaseEntity {
 
     private String question;
