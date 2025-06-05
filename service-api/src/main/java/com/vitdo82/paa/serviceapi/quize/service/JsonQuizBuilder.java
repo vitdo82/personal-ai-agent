@@ -5,6 +5,7 @@ import java.util.List;
 
 import org.springframework.stereotype.Component;
 
+import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.vitdo82.paa.serviceapi.quize.repository.QuizEntity;
 
@@ -20,8 +21,7 @@ public class JsonQuizBuilder {
 
     public List<QuizEntity> buildQuizz(URL path) {
         try {
-            List<QuizEntity> quizz = objectMapper.readValue(path, List.class);
-            return quizz;
+            return objectMapper.readValue(path, new TypeReference<List<QuizEntity>>() {});
         } catch (Exception e) {
             log.error(e.getMessage(), e);
         }
