@@ -17,7 +17,7 @@ public class TextAssistant {
     public String correctText(String text, Language language) {
         language = language == null ? Language.ENGLISH : language;
 
-        OllamaApi ollamaApi = new OllamaApi("http://localhost:11434");
+        OllamaApi ollamaApi = OllamaApi.builder().baseUrl("http://localhost:11434").build();
         OllamaApi.ChatRequest chatRequest = OllamaApi.ChatRequest.builder("deepseek-r1:8b")
                 .stream(false)
                 .messages(List.of(
@@ -34,7 +34,6 @@ public class TextAssistant {
                 )).build();
         OllamaApi.ChatResponse response = ollamaApi.chat(chatRequest);
         return response.message().content();
-
     }
 
     public String translate(String text) {
@@ -44,7 +43,7 @@ public class TextAssistant {
     public String translate(String text, Language language) {
         language = language == null ? Language.ENGLISH : language;
 
-        OllamaApi ollamaApi = new OllamaApi("http://localhost:11434");
+        OllamaApi ollamaApi = OllamaApi.builder().baseUrl("http://localhost:11434").build();
         OllamaApi.ChatRequest chatRequest = OllamaApi.ChatRequest.builder("deepseek-r1:8b")
                 .stream(false)
                 .messages(List.of(
