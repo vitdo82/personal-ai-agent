@@ -1,0 +1,10 @@
+spring.application.name=service-api
+
+app.assistans.enabled=false
+spring.ai.openai.chat.enabled=false
+spring.ai.openai.embedding.enabled=false
+spring.ai.openai.image.enabled=false
+spring.ai.openai.audio.transcription.enabled=false
+spring.ai.openai.audio.speech.enabled=false
+
+spring.ai.openai.api-key=11111
