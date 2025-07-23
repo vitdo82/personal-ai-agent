@@ -35,8 +35,8 @@ public class ImportService {
         }
     }
 
-    @EventListener(ApplicationReadyEvent.class)
-    public void importOnStartup() {
-        this.importData(null);
-    }
+    // @EventListener(ApplicationReadyEvent.class)
+    // public void importOnStartup() {
+    //     this.importData(null);
+    // }
 }
