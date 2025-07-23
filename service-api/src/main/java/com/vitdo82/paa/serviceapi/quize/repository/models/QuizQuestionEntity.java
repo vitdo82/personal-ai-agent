@@ -1,4 +1,4 @@
-package com.vitdo82.paa.serviceapi.quize.repository;
+package com.vitdo82.paa.serviceapi.quize.repository.models;
 
 import com.vitdo82.paa.serviceapi.core.repository.BaseEntity;
 import jakarta.persistence.*;

@@ -1,0 +1,58 @@
+<categories>
+  <category>
+    <id>3</id>
+    <name>sport</name>
+    <quizzes>
+      <quiz>
+        <id>21</id>
+        <name>Sport Quiz 1</name>
+        <description>Test your sport knowledge! Quiz 1.</description>
+      </quiz>
+      <quiz>
+        <id>22</id>
+        <name>Sport Quiz 2</name>
+        <description>Test your sport knowledge! Quiz 2.</description>
+      </quiz>
+      <quiz>
+        <id>23</id>
+        <name>Sport Quiz 3</name>
+        <description>Test your sport knowledge! Quiz 3.</description>
+      </quiz>
+      <quiz>
+        <id>24</id>
+        <name>Sport Quiz 4</name>
+        <description>Test your sport knowledge! Quiz 4.</description>
+      </quiz>
+      <quiz>
+        <id>25</id>
+        <name>Sport Quiz 5</name>
+        <description>Test your sport knowledge! Quiz 5.</description>
+      </quiz>
+      <quiz>
+        <id>26</id>
+        <name>Sport Quiz 6</name>
+        <description>Test your sport knowledge! Quiz 6.</description>
+      </quiz>
+      <quiz>
+        <id>27</id>
+        <name>Sport Quiz 7</name>
+        <description>Test your sport knowledge! Quiz 7.</description>
+      </quiz>
+      <quiz>
+        <id>28</id>
+        <name>Sport Quiz 8</name>
+        <description>Test your sport knowledge! Quiz 8.</description>
+      </quiz>
+      <quiz>
+        <id>29</id>
+        <name>Sport Quiz 9</name>
+        <description>Test your sport knowledge! Quiz 9.</description>
+      </quiz>
+      <quiz>
+        <id>30</id>
+        <name>Sport Quiz 10</name>
+        <description>Test your sport knowledge! Quiz 10.</description>
+      </quiz>
+    </quizzes>
+  </category>
+</categories>

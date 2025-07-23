@@ -1,0 +1,58 @@
+<categories>
+  <category>
+    <id>1</id>
+    <name>medical</name>
+    <quizzes>
+      <quiz>
+        <id>1</id>
+        <name>Medical Quiz 1</name>
+        <description>Test your medical knowledge! Quiz 1.</description>
+      </quiz>
+      <quiz>
+        <id>2</id>
+        <name>Medical Quiz 2</name>
+        <description>Test your medical knowledge! Quiz 2.</description>
+      </quiz>
+      <quiz>
+        <id>3</id>
+        <name>Medical Quiz 3</name>
+        <description>Test your medical knowledge! Quiz 3.</description>
+      </quiz>
+      <quiz>
+        <id>4</id>
+        <name>Medical Quiz 4</name>
+        <description>Test your medical knowledge! Quiz 4.</description>
+      </quiz>
+      <quiz>
+        <id>5</id>
+        <name>Medical Quiz 5</name>
+        <description>Test your medical knowledge! Quiz 5.</description>
+      </quiz>
+      <quiz>
+        <id>6</id>
+        <name>Medical Quiz 6</name>
+        <description>Test your medical knowledge! Quiz 6.</description>
+      </quiz>
+      <quiz>
+        <id>7</id>
+        <name>Medical Quiz 7</name>
+        <description>Test your medical knowledge! Quiz 7.</description>
+      </quiz>
+      <quiz>
+        <id>8</id>
+        <name>Medical Quiz 8</name>
+        <description>Test your medical knowledge! Quiz 8.</description>
+      </quiz>
+      <quiz>
+        <id>9</id>
+        <name>Medical Quiz 9</name>
+        <description>Test your medical knowledge! Quiz 9.</description>
+      </quiz>
+      <quiz>
+        <id>10</id>
+        <name>Medical Quiz 10</name>
+        <description>Test your medical knowledge! Quiz 10.</description>
+      </quiz>
+    </quizzes>
+  </category>
+</categories>

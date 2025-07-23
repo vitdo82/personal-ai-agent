@@ -1,5 +1,6 @@
 package com.vitdo82.paa.serviceapi.quize.repository;
 
+import com.vitdo82.paa.serviceapi.quize.repository.models.QuizEntity;
 import com.vitdo82.paa.serviceapi.quize.repository.projection.QuizName;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;

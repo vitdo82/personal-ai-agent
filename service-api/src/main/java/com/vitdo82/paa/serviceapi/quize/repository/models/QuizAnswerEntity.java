@@ -1,4 +1,4 @@
-package com.vitdo82.paa.serviceapi.quize.repository;
+package com.vitdo82.paa.serviceapi.quize.repository.models;
 
 import org.springframework.data.annotation.Transient;
 

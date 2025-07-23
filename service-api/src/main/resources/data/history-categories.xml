@@ -1,0 +1,58 @@
+<categories>
+  <category>
+    <id>4</id>
+    <name>history</name>
+    <quizzes>
+      <quiz>
+        <id>31</id>
+        <name>History Quiz 1</name>
+        <description>Test your history knowledge! Quiz 1.</description>
+      </quiz>
+      <quiz>
+        <id>32</id>
+        <name>History Quiz 2</name>
+        <description>Test your history knowledge! Quiz 2.</description>
+      </quiz>
+      <quiz>
+        <id>33</id>
+        <name>History Quiz 3</name>
+        <description>Test your history knowledge! Quiz 3.</description>
+      </quiz>
+      <quiz>
+        <id>34</id>
+        <name>History Quiz 4</name>
+        <description>Test your history knowledge! Quiz 4.</description>
+      </quiz>
+      <quiz>
+        <id>35</id>
+        <name>History Quiz 5</name>
+        <description>Test your history knowledge! Quiz 5.</description>
+      </quiz>
+      <quiz>
+        <id>36</id>
+        <name>History Quiz 6</name>
+        <description>Test your history knowledge! Quiz 6.</description>
+      </quiz>
+      <quiz>
+        <id>37</id>
+        <name>History Quiz 7</name>
+        <description>Test your history knowledge! Quiz 7.</description>
+      </quiz>
+      <quiz>
+        <id>38</id>
+        <name>History Quiz 8</name>
+        <description>Test your history knowledge! Quiz 8.</description>
+      </quiz>
+      <quiz>
+        <id>39</id>
+        <name>History Quiz 9</name>
+        <description>Test your history knowledge! Quiz 9.</description>
+      </quiz>
+      <quiz>
+        <id>40</id>
+        <name>History Quiz 10</name>
+        <description>Test your history knowledge! Quiz 10.</description>
+      </quiz>
+    </quizzes>
+  </category>
+</categories>

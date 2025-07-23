@@ -1,0 +1,58 @@
+<categories>
+  <category>
+    <id>2</id>
+    <name>it</name>
+    <quizzes>
+      <quiz>
+        <id>11</id>
+        <name>IT Quiz 1</name>
+        <description>Test your IT knowledge! Quiz 1.</description>
+      </quiz>
+      <quiz>
+        <id>12</id>
+        <name>IT Quiz 2</name>
+        <description>Test your IT knowledge! Quiz 2.</description>
+      </quiz>
+      <quiz>
+        <id>13</id>
+        <name>IT Quiz 3</name>
+        <description>Test your IT knowledge! Quiz 3.</description>
+      </quiz>
+      <quiz>
+        <id>14</id>
+        <name>IT Quiz 4</name>
+        <description>Test your IT knowledge! Quiz 4.</description>
+      </quiz>
+      <quiz>
+        <id>15</id>
+        <name>IT Quiz 5</name>
+        <description>Test your IT knowledge! Quiz 5.</description>
+      </quiz>
+      <quiz>
+        <id>16</id>
+        <name>IT Quiz 6</name>
+        <description>Test your IT knowledge! Quiz 6.</description>
+      </quiz>
+      <quiz>
+        <id>17</id>
+        <name>IT Quiz 7</name>
+        <description>Test your IT knowledge! Quiz 7.</description>
+      </quiz>
+      <quiz>
+        <id>18</id>
+        <name>IT Quiz 8</name>
+        <description>Test your IT knowledge! Quiz 8.</description>
+      </quiz>
+      <quiz>
+        <id>19</id>
+        <name>IT Quiz 9</name>
+        <description>Test your IT knowledge! Quiz 9.</description>
+      </quiz>
+      <quiz>
+        <id>20</id>
+        <name>IT Quiz 10</name>
+        <description>Test your IT knowledge! Quiz 10.</description>
+      </quiz>
+    </quizzes>
+  </category>
+</categories>

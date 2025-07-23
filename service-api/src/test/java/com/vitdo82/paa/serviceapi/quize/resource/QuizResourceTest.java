@@ -12,7 +12,7 @@ import org.springframework.security.test.context.support.WithMockUser;
 import org.springframework.test.web.reactive.server.WebTestClient;
 import org.testcontainers.junit.jupiter.Testcontainers;
 
-import com.vitdo82.paa.serviceapi.quize.repository.QuizEntity;
+import com.vitdo82.paa.serviceapi.quize.repository.models.QuizEntity;
 import com.vitdo82.paa.serviceapi.quize.service.JsonQuizBuilder;
 import com.vitdo82.paa.serviceapi.quize.service.QuizService;
 

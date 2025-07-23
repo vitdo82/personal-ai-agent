@@ -11,25 +11,38 @@ This project is a personal AI agent platform featuring:
 - [Docker](https://www.docker.com/)
 - [Java 21+](https://adoptopenjdk.net/)
 - [Node.js 18+/npm] (for frontend)
+- [Podman]
+    Installation:
+    ```sh
+    export DOCKER_HOST="unix:///Users/$USER/.local/share/containers/podman/machine/podman.sock"
+    ```
+    ```sh
+    podman machine ssh -- systemctl --user enable --now podman.socket
+    ```
 
 ---
 
 ## Setup & Build Instructions
 
 ### 1. Start Dependencies
-Run Docker Compose to start Postgres, Ollama, and Kafka:
+Run Compose to start Postgres, Ollama, and Kafka:
 
+* Docker
 ```sh
 docker-compose up -d
+```
+
+* Podman
+```sh
+podman compose --file compose.yaml up
 ```
 
 ### 2. Backend (service-api)
 Build and run the Spring Boot backend:
 
 ```sh
-cd service-api
-./gradlew build
-./gradlew bootRun
+./gradlew service-api:build
+./gradlew service-api:bootRun
 ```
 
 - API docs: [http://localhost:8080/swagger-ui/index.html](http://localhost:8080/swagger-ui/index.html)

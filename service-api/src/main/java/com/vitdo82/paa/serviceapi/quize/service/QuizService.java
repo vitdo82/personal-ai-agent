@@ -6,10 +6,10 @@ import java.util.Optional;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.vitdo82.paa.serviceapi.quize.repository.QuizAnswerEntity;
-import com.vitdo82.paa.serviceapi.quize.repository.QuizEntity;
-import com.vitdo82.paa.serviceapi.quize.repository.QuizQuestionEntity;
 import com.vitdo82.paa.serviceapi.quize.repository.QuizRepository;
+import com.vitdo82.paa.serviceapi.quize.repository.models.QuizAnswerEntity;
+import com.vitdo82.paa.serviceapi.quize.repository.models.QuizEntity;
+import com.vitdo82.paa.serviceapi.quize.repository.models.QuizQuestionEntity;
 import com.vitdo82.paa.serviceapi.quize.repository.projection.QuizName;
 
 import lombok.RequiredArgsConstructor;
